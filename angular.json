@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "sm-workapp-client"
+  "defaultProject": "sm-workapp-client",
+  "cli": {
+    "analytics": "e103afbe-b53e-4306-b801-e8488078b3e6"
+  }
 }
