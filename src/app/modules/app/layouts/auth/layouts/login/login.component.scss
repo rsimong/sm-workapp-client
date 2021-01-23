@@ -1,0 +1,132 @@
+#login--layout,
+#login--layout>div,
+#login--layout>#ll--header>h2,
+#login--layout>#ll--header>p,
+#login--layout>#ll--form>form,
+#login--layout>#ll--form>form>div,
+#login--layout>#ll--form>form>#ll--f--fields>label,
+#login--layout>#ll--form>form>#ll--f--actions>ul,
+#login--layout>#ll--form>form>#ll--f--actions>ul>li {
+  width: 100%;
+  display: block;
+}
+
+#login--layout>#ll--header {
+  margin-bottom: 32px;
+}
+
+#login--layout>#ll--header>h2 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#login--layout>#ll--header>p {
+  color: #74777f;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields {
+  margin-bottom: 28px;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text {
+  padding: 16px;
+  border: 2px solid #212433;
+  border-radius: 6px;
+  transition: border-color 0.2s, background-color 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text.is-focus {
+  border-color: #5268f4;
+  background-color: #242736;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text>.fit--icon {
+  width: 36px;
+  padding-right: 12px;
+  text-align: center;
+  line-height: 1;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text>.fit--icon>i {
+  width: 24px;
+  font-size: 21px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text.is-focus>.fit--icon>i {
+  color: #5268f4;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text>.fit--input {
+  width: calc(100% - 36px);
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text>.fit--input>input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+#login--layout>#ll--form>form>#ll--f--fields>label>.field--input-text>.fit--input>input::placeholder {
+  opacity: 0.2;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li:not(:last-of-type) {
+  margin-bottom: 28px;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--submit>button,
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div,
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>p,
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>ul,
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--login>p {
+  width: 100%;
+  display: block;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>p {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #74777f;
+  text-align: center;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>ul {
+  text-align: center;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>ul>li {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #272b2f;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>ul>li:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--rrss>div>ul>li>i {
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#login--layout>#ll--form>form>#ll--f--actions>ul>li#ll--f--a--login>p {
+  font-size: 15px;
+  text-align: center;
+}

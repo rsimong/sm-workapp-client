@@ -1,0 +1,56 @@
+<div id="login--layout">
+  <div id="ll--header">
+    <h2>Hello, welcome back!<br> We are delighted to see you again</h2>
+    <p>During you absence, we have taken care of keeping your virtual workplace in order. Everything is ready and
+      prepared for you, good luck and have a great day!</p>
+  </div>
+  <div id="ll--form">
+    <form [formGroup]="loginForm" (ngSubmit)="_onSubmit()">
+      <div id="ll--f--fields">
+        <label>
+          <div class="field--input-text" [ngClass]="{ 'is-focus': inputFocused === 'email'  }">
+            <div class="fit--icon">
+              <i class="las la-envelope"></i>
+            </div>
+            <div class="fit--input">
+              <input type="email" placeholder="Write the email with which you registered" formControlName="email"
+                (focus)="_onFocus('email')" (blur)="_onBlur()" />
+            </div>
+          </div>
+        </label>
+        <label>
+          <div class="field--input-text" [ngClass]="{ 'is-focus': inputFocused === 'password'  }">
+            <div class="fit--icon">
+              <i class="las la-key"></i>
+            </div>
+            <div class="fit--input">
+              <input type="password" placeholder="Finally, enter your password" formControlName="password"
+                (focus)="_onFocus('password')" (blur)="_onBlur()" />
+            </div>
+          </div>
+        </label>
+      </div>
+      <div id="ll--f--actions">
+        <ul>
+          <li id="ll--f--a--submit">
+            <button class="btn btn-primary" type="submit" [disabled]="loginForm.invalid">Sign In</button>
+          </li>
+          <li id="ll--f--a--rrss">
+            <div>
+              <p>Or continue with these social profile</p>
+              <ul>
+                <li><i class="fab fa-google"></i></li>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-github"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li id="ll--f--a--login">
+            <p>Don't have an account yet? <a [routerLink]="['/', 'app', 'auth', 'register']">Sign Up</a></p>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

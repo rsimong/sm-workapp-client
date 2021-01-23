@@ -1,0 +1,79 @@
+<div id="register--layout">
+  <div id="rl--header">
+    <h2>Hello!<br> Sign up to get started</h2>
+    <p>Fill in all the fields with your data to complete the registration.</p>
+  </div>
+  <div id="rl--form">
+    <form [formGroup]="registerForm" autocomplete="off">
+      <div id="rl--f--fields">
+        <label>
+          <div class="field--input-text" [ngClass]="{ 'is-focus': inputFocused === 'email'  }">
+            <div class="fit--icon">
+              <i class="las la-envelope"></i>
+            </div>
+            <div class="fit--input">
+              <input type="email" placeholder="Enter your preferred email" formControlName="email"
+                (focus)="_onFocus('email')" (blur)="_onBlur()" />
+            </div>
+          </div>
+        </label>
+        <label>
+          <div class="field--input-text" [ngClass]="{ 'is-focus': inputFocused === 'name'  }">
+            <div class="fit--icon">
+              <i class="las la-user-tie"></i>
+            </div>
+            <div class="fit--input">
+              <input type="text" placeholder="How do you want us to call you?" formControlName="name"
+                (focus)="_onFocus('name')" (blur)="_onBlur()" />
+            </div>
+          </div>
+        </label>
+        <label>
+          <div class="field--input-text" [ngClass]="{ 'is-focus': inputFocused === 'password'  }">
+            <div class="fit--icon">
+              <i class="las la-key"></i>
+            </div>
+            <div class="fit--input">
+              <input type="password" placeholder="Think of a super secure password" formControlName="password"
+                (focus)="_onFocus('password')" (blur)="_onBlur()" />
+            </div>
+          </div>
+        </label>
+        <label>
+          <div class="field--input-checkbox">
+            <div class="fic--checkbox">
+              <input type="checkbox" formControlName="termsOfUse">
+              <div>
+                <i class="las la-check"></i>
+              </div>
+            </div>
+            <div class="fic--text">
+              <span>I agree to all statements included in <a [routerLink]="['/']">Terms of Use</a></span>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div id="rl--f--actions">
+        <ul>
+          <li id="rl--f--a--submit">
+            <button class="btn btn-primary" type="submit" [disabled]="registerForm.invalid">Get started now</button>
+          </li>
+          <li id="rl--f--a--rrss">
+            <div>
+              <p>Or continue with these social profile</p>
+              <ul>
+                <li><i class="fab fa-google"></i></li>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-github"></i></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rl--f--a--login">
+            <p>Already a memeber? <a [routerLink]="['/', 'app', 'auth', 'login']">Sign In</a></p>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,201 @@
+#register--layout,
+#register--layout>div,
+#register--layout>#rl--header>h2,
+#register--layout>#rl--header>p,
+#register--layout>#rl--form>form,
+#register--layout>#rl--form>form>div,
+#register--layout>#rl--form>form>#rl--f--fields>label,
+#register--layout>#rl--form>form>#rl--f--actions>ul,
+#register--layout>#rl--form>form>#rl--f--actions>ul>li {
+  width: 100%;
+  display: block;
+}
+
+#register--layout>#rl--header {
+  margin-bottom: 32px;
+}
+
+#register--layout>#rl--header>h2 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#register--layout>#rl--header>p {
+  color: #74777f;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label {
+  margin-bottom: 16px;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text {
+  padding: 16px;
+  border: 2px solid #212433;
+  border-radius: 6px;
+  transition: border-color 0.2s, background-color 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text.is-focus {
+  border-color: #5268f4;
+  background-color: #242736;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text>.fit--icon {
+  width: 36px;
+  padding-right: 12px;
+  text-align: center;
+  line-height: 1;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text>.fit--icon>i {
+  width: 24px;
+  font-size: 21px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text.is-focus>.fit--icon>i {
+  color: #5268f4;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text>.fit--input {
+  width: calc(100% - 36px);
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text>.fit--input>input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-text>.fit--input>input::placeholder {
+  opacity: 0.2;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox {
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--checkbox {
+  width: 36px;
+  padding-right: 12px;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--checkbox>input[type="checkbox"] {
+  display: none;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox:hover {
+  cursor: pointer;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--checkbox>input[type="checkbox"]+div {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #212433;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox:hover>.fic--checkbox>input[type="checkbox"]+div {
+  border-color: #5268f4;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--checkbox>input[type="checkbox"]:checked+div {
+  border-color: #5268f4;
+  background-color: #5268f4;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--checkbox>input[type="checkbox"]+div>i {
+  width: 14px;
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+  position: absolute;
+  opacity: 0;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox:hover>.fic--checkbox>input[type="checkbox"]+div>i {
+  opacity: 0.3;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--checkbox>input[type="checkbox"]:checked+div>i {
+  opacity: 1;
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--text {
+  width: calc(100% - 36px);
+}
+
+#register--layout>#rl--form>form>#rl--f--fields>label>.field--input-checkbox>.fic--text>span {
+  width: 100%;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li:not(:last-of-type) {
+  margin-bottom: 28px;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--submit>button,
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div,
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>p,
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>ul,
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--login>p {
+  width: 100%;
+  display: block;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>p {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #74777f;
+  text-align: center;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>ul {
+  text-align: center;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>ul>li {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #272b2f;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>ul>li:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--rrss>div>ul>li>i {
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#register--layout>#rl--form>form>#rl--f--actions>ul>li#rl--f--a--login>p {
+  font-size: 15px;
+  text-align: center;
+}
