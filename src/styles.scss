@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  // background-image: url('./assets/imgs/background/4709918.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F1F1F2;
+  // background-color: #1a1d20;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  transition: max-height 0.3s, margin 0.1s;
+  box-shadow: 0 0 0 transparent;
+  display: block;
+}
+
+.container>.content-wrapper {
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 0 transparent;
+  background-color: #1c1f2e;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1140px) and (min-height: 768px) {
+  .container {
+    max-height: 768px;
+    margin-top: calc((100vh - 768px) / 2);
+  }
+
+  .container>.content-wrapper {
+    border-radius: 12px;
+    box-shadow: 10px 10px 20px -4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  padding: 14px 20px;
+  border: 2px solid #5268f4;
+  border-radius: 6px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  border-color: #5268f4;
+  color: #fff;
+  background-color: #5268f4;
+}
+
+.btn.btn-primary:disabled {
+  background-color: transparent;
+  color: #5268f4;
+}
+
+a {
+  font: inherit;
+  // font-weight: 500;
+  color: #5268f4;
+}
