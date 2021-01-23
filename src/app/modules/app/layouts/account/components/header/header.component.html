@@ -1,0 +1,30 @@
+<div id="header--component">
+  <div id="hc--page-title">
+    <h1>{{ pageTitle }}</h1>
+  </div>
+  <div id="hc--user-options">
+    <ul>
+      <li>
+        <div id="hc--uo--searcher">
+          <form>
+            <label>
+              <div id="hc--uo--s--icon">
+                <i class="las la-search"></i>
+              </div>
+              <div id="hc--uo--s--input">
+                <input type="text" placeholder="Search something">
+              </div>
+            </label>
+          </form>
+        </div>
+      </li>
+      <li>
+        <div id="hc--uo--user-menu">
+          <div id="hc--uo--um--avatar">
+            <div [style.backgroundImage]="'url(' + user?.avatar + ')'"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

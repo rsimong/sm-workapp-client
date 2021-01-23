@@ -1,0 +1,98 @@
+#header--component {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header--component>#hc--page-title {
+  padding: 0 16px;
+}
+
+#header--component>#hc--page-title>h1 {
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+}
+
+#header--component>#hc--user-options>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header--component>#hc--user-options>ul>li,
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label>div {
+  display: inline-block;
+}
+
+#header--component>#hc--user-options>ul>li:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher {
+  width: 320px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background-color: #242736;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form,
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label>#hc--uo--s--icon {
+  width: 34px;
+  padding-right: 16px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label>#hc--uo--s--icon>i {
+  font-size: 20px;
+  color: #71737c;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label>#hc--uo--s--input {
+  width: calc(100% - 34px);
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label>#hc--uo--s--input>input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--searcher>form>label>#hc--uo--s--input>input::placeholder {
+  color: #71737c;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--user-menu>#hc--uo--um--avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#header--component>#hc--user-options>ul>li>#hc--uo--user-menu>#hc--uo--um--avatar>div {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+}

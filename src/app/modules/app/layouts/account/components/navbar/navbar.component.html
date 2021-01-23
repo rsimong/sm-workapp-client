@@ -1,0 +1,23 @@
+<div id="navbar--component">
+  <div id="nc--logo">
+    <div id="nc--logo--box">
+      <span>S</span>
+    </div>
+  </div>
+  <div id="nc--main-menu">
+    <nav>
+      <ul>
+        <li *ngFor="let option of navbarOptions">
+          <a [routerLink]="option?.url" [routerLinkActive]="'is-active'">
+            <i [class]="option?.icon"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div id="nc--settings">
+    <button type="button">
+      <i class="las la-cog"></i>
+    </button>
+  </div>
+</div>

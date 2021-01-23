@@ -1,0 +1,39 @@
+#account--layout,
+#account--layout>.container>#al--content-wrapper>#al--cw--box {
+  width: 100%;
+  height: 100%;
+}
+
+#account--layout>.container>#al--content-wrapper>#al--cw--box {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+#account--layout>.container>#al--content-wrapper>#al--cw--box>#al--sidebar {
+  padding: 16px;
+  border-right: 2px solid #212433;
+}
+
+#account--layout>.container>#al--content-wrapper>#al--cw--box>#al--main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#account--layout>.container>#al--content-wrapper>#al--cw--box>#al--main-content>div {
+  width: 100%;
+  display: block;
+}
+
+#account--layout>.container>#al--content-wrapper>#al--cw--box>#al--main-content>#al--mc--header {
+  padding: 16px;
+  border-bottom: 2px solid #212433;
+}
+
+#account--layout>.container>#al--content-wrapper>#al--cw--box>#al--main-content>#al--mc--content {
+  height: 100%;
+}

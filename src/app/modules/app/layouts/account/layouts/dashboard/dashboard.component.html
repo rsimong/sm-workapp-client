@@ -1,0 +1,34 @@
+<div id="dashboard--layout">
+  <div id="dl--left-side">
+    <div id="dl--ls--quick-access">
+      <ul id="qa--list">
+        <li *ngFor="let quickAccess of quickAccessList" class="qa--item">
+          <div class="qa--item--box">
+            <div class="qa--item--icon">
+              <i [class]="quickAccess?.icon"></i>
+            </div>
+            <div class="qa--item--description">
+              <p class="qa--i--d--main-text">{{ quickAccess?.mainText }}</p>
+              <p class="qa--i--d--secondary-text">{{ quickAccess?.secondaryText }}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="dl--right-side">
+    <div id="dl--rs--day-clock">
+      <div id="dl--rs--dc--box">
+        <div id="dl--rs--dc--clock">
+          <div id="dc--time">{{ time }}</div>
+          <div id="dc--date">{{ date }}</div>
+        </div>
+        <div id="dl--rs--dc--controls">
+          <button type="button">
+            <i class="las la-play"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
